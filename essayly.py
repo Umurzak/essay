@@ -6,8 +6,8 @@ def index():
     return "Hello World!"
 
 @app.route("/<string:name>")
-    def hello(name):
-        return f"Hello, {name}!"
+def hello(name):
+    return f"Hello, {name}!"
     
 if __name__ == "__main__":
     app.run()
