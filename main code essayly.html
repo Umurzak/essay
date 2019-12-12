@@ -13,15 +13,17 @@
 		<a href="contact us.html">Contact us</a>
 		<form action="{{url_for('hello')}}" method="post">
 			<input type="text" placeholder="Full Name" name="name">
-			<input name="wtype" placeholder="Who are you?" list="writer type">
-			<input name="gender" placeholder="Are you sure?" list="gender">
-			<button style="color:green;text-align:center;">submit</button>
+			<input name="wtype" placeholder="Writer type" list="writer type">
 			<datalist id="writer type">
 				<option value="Fiction Writer">
 				<option value="Non-Fiction Writer">
+			</datalist>
+			<input name="gender" placeholder="Gender" list="gender">
 			<datalist id="gender">
 				<option value="Male">
 				<option value="Female">
+			</datalist>
+			<button style="color:green;text-align:center;">submit</button>
 		</form>
 	</body>
 </html>
